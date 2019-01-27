@@ -87,6 +87,10 @@ i:hover {
 }
 
 @media (max-width: 450px) {
+    #bodyContainer {
+        display: grid;
+        grid-template-rows: 500px 1fr 200px;
+    }
     .oneItem {
         display: grid;
         grid-template-rows: 1fr 1fr;
