@@ -2,18 +2,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: monospace;
-    background-image: url("/images/img1.jpg");
+    background-image: url("/img1.jpg");
     background-size: cover;
     background-attachment: fixed;
     color: #232323;
 }
 
-.bodyContainer {
+#bodyContainer {
     display: grid;
     grid-template-rows: 200px 1fr 60px;
+    width: 100%;
 }
 
-.titleContainer {
+#titleContainer {
     text-align: center;
 }
 
@@ -26,7 +27,7 @@ xmp {
     font-size: 1.3em;
 }
 
-.infoContainer {
+#infoContainer {
     margin: 0 auto;
 }
 
@@ -65,3 +66,9 @@ i {
 i:hover {
     color: #343434;
 }
+
+/*@media (max-width: 1000px) {*/
+/*    .infoContainer {*/
+/*        max-width: 400px;*/
+/*    }*/
+/*}*/
