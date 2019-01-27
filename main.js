@@ -42,16 +42,19 @@ let data = [
 // Add data to HTML as a table
 data.forEach(function(item){
   let infoContainer = document.querySelector("#infoContainer");
+  let div = document.createElement("div");
+  div.classList.add("item");
   let hr = document.createElement("hr");
-  let table = document.createElement("table");
+  let table = document.createElement("div");
   for(let i=0; i<data.length; i++){
     let key = Object.keys(item)[i];
-    let row = document.createElement("tr");
-    let col1 = document.createElement("td");
+    let row = document.createElement("div");
+    row.classList.add("oneItem");
+    let col1 = document.createElement("div");
     col1.classList.add("key");
     let strong = document.createElement("strong");
     let keyText = document.createTextNode(key + ":");
-    let col2 = document.createElement("td");
+    let col2 = document.createElement("div");
     col2.classList.add("description");
     let infoText = document.createTextNode(item[key]);
     if(item[key].includes("https:")){
@@ -70,6 +73,7 @@ data.forEach(function(item){
     row.appendChild(col2);
     table.appendChild(row);
   };
-  infoContainer.appendChild(hr);
-  infoContainer.appendChild(table);
+  div.appendChild(hr);
+  div.appendChild(table);
+  infoContainer.appendChild(div);
 });
