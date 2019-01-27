@@ -13,32 +13,44 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 220px 1fr 50px;
+    grid-template-rows: 150px 1fr 50px;
 }
 
 #titleContainer {
-    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
     text-align: center;
     padding: 0 20px;
+    margin: 0 auto;
 }
 
 xmp {
     font-size: 2em;
     font-weight: 800;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#introContainer {
+    margin: auto;
 }
 
 .intro {
     font-size: 1.3em;
+    margin: auto;
 }
 
 #infoContainer {
-    margin: 0 auto;
+    margin: 20px auto;
     margin-bottom: 50px;
     padding: 0 20px;
+    min-width: 100px;
+    overflow-wrap: break-word;
 }
 
 .table {
     display: grid;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(auto-fit, 1fr);
 }
 
@@ -64,8 +76,6 @@ a:hover {
 }
 
 #footer {
-    padding: 0;
-    margin: 0;
     display: grid;
     grid-template-columns: 100%;
     background-color: rgba(52, 52, 52, 0.3);
@@ -88,27 +98,53 @@ i:hover {
     color: #343434;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+    #bodyContainer {
+        grid-template-rows: 220px 1fr 100px;
+    }
+    
+    xmp {
+        font-size: 2em;
+    }
+    
+    .intro {
+        padding: 5px 0;
+        font-size: 1.6em;
+    }
+    
     .table {
         padding: 20px 0 20px 0;
+        font-size: 1.4em;
     }
     
     .oneItem {
         display: grid;
-        padding: 10px 0 10px 0;
         grid-template-columns: 100%;
-        grid-template-rows: auto-fit auto-fit;
+        padding: 10px 0;
     }
     
     .key {
-        margin: 0;
-        padding: 0;
         text-align: center;
-        padding: 0;
     }
+    
     .description {
-        margin: 0;
-        padding: 0;
         text-align: center;
+        padding-left: 0;
+    }
+    
+    i {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 500px) {
+    #titleContainer {
+        max-width: 350px;
+    }
+    
+    #infoContainer {
+        max-width: 350px;
     }
 }
