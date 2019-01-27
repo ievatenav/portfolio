@@ -25,14 +25,14 @@ let data = [
     date: "15.12.2018.",
     project: "A Simple Color Guessing Game.",
     skills: "Javascript functions, DOM manipulation.",
-    visit: "https://gentle-dawn-50190.herokuapp.com",
+    visit: "https://ievatenav.github.io/color_game/",
     code: "https://github.com/ievatenav/color_game"
   },
   {
     date: "10.12.2018.",
     project: "A Simple Score Keeper.",
     skills: "Basic javascript DOM manipulation.",
-    visit: "https://blooming-reaches-62776.herokuapp.com",
+    visit: "https://ievatenav.github.io/score-keeper/",
     code: "https://github.com/ievatenav/score-keeper"
   }
 ];
