@@ -2,11 +2,21 @@ body {
     margin: 0;
     padding: 0;
     font-family: monospace;
-    background-image: url("img1.jpg");
-    background-size: cover;
-    background-attachment: fixed;
     color: #232323;
-    background-position: right;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("img1.jpg") no-repeat right top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #bodyContainer {
@@ -41,10 +51,9 @@ xmp {
 }
 
 #infoContainer {
-    margin: 20px auto;
+    margin: 20px 0;
     margin-bottom: 50px;
     padding: 0 20px;
-    min-width: 100px;
     overflow-wrap: break-word;
 }
 
@@ -76,6 +85,8 @@ a:hover {
 }
 
 #footer {
+    height: 100%;
+    margin: auto;
     display: grid;
     grid-template-columns: 100%;
     background-color: rgba(52, 52, 52, 0.3);
@@ -88,9 +99,9 @@ a:hover {
 }
 
 i {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 2.5em;
     color: white;
 }
 
@@ -98,7 +109,11 @@ i:hover {
     color: #343434;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 1050px) {
+    body:before {
+        padding-right: 50px;
+    }
+    
     #bodyContainer {
         grid-template-rows: 220px 1fr 100px;
     }
@@ -112,9 +127,12 @@ i:hover {
         font-size: 1.6em;
     }
     
-    .table {
-        padding: 20px 0 20px 0;
+    #infoContainer {
         font-size: 1.4em;
+    }
+    
+    .table {
+        padding: 20px 0;
     }
     
     .oneItem {
@@ -133,18 +151,40 @@ i:hover {
     }
     
     i {
-        padding-left: 30px;
-        padding-right: 30px;
-        font-size: 2.5em;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 2.3em;
     }
 }
 
-@media (max-width: 500px) {
-    #titleContainer {
-        max-width: 350px;
+@media screen and (max-width: 385px) {
+    xmp {
+        font-size: 1.8em;
+    }
+    
+    .intro {
+        font-size: 1.6em;
     }
     
     #infoContainer {
-        max-width: 350px;
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #bodyContainer {
+        min-width: 320px;
+    }
+    
+    xmp {
+        font-size: 1.6em;
+    }
+    
+    .intro {
+        font-size: 1.4em;
+    }
+    
+    #infoContainer {
+        font-size: 1.2em;
     }
 }
