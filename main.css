@@ -51,7 +51,7 @@ xmp {
 }
 
 #infoContainer {
-    margin: 20px 0;
+    margin: 20px auto;
     margin-bottom: 50px;
     padding: 0 20px;
     overflow-wrap: break-word;
