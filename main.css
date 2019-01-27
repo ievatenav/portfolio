@@ -54,7 +54,6 @@ xmp {
     margin: 20px auto;
     margin-bottom: 50px;
     padding: 0 20px;
-    overflow-wrap: break-word;
 }
 
 .table {
@@ -129,6 +128,8 @@ i:hover {
     
     #infoContainer {
         font-size: 1.4em;
+        margin: 20px 0;
+        overflow-wrap: break-word;
     }
     
     .table {
