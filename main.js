@@ -46,6 +46,7 @@ data.forEach(function(item){
   div.classList.add("item");
   let hr = document.createElement("hr");
   let table = document.createElement("div");
+  table.classList.add("table");
   for(let i=0; i<data.length; i++){
     let key = Object.keys(item)[i];
     let row = document.createElement("div");
