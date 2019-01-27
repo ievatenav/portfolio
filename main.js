@@ -18,7 +18,7 @@ let data = [
     date: "18.12.2018.",
     project: "A Simple To Do App.",
     skills: "DOM manipulation, JQuery, Bootstrap.",
-    visit: "https://enigmatic-brushlands-98853.herokuapp.com",
+    visit: "https://ievatenav.github.io/to-do-app/",
     code: "https://github.com/ievatenav/to-do-app"
   },
   {
