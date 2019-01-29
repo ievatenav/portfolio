@@ -23,15 +23,15 @@ let data = [
   },
   {
     created: "15.12.2018.",
-    project: "A Simple Color Guessing Game, Responsive Design.",
-    skills: "Javascript functions, DOM manipulation.",
+    project: "A Simple Color Guessing Game.",
+    skills: "Javascript functions, DOM manipulation, Responsive Design.",
     visit: "https://ievatenav.github.io/color_game/",
     code: "https://github.com/ievatenav/color_game"
   },
   {
     created: "10.12.2018.",
-    project: "A Simple Score Keeper, Responsive Design.",
-    skills: "Basic javascript DOM manipulation.",
+    project: "A Simple Score Keeper.",
+    skills: "Basic javascript DOM manipulation, Responsive Design.",
     visit: "https://ievatenav.github.io/score-keeper/",
     code: "https://github.com/ievatenav/score-keeper"
   }
