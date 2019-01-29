@@ -106,7 +106,7 @@ a:hover {
 i {
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 2.5em;
+    font-size: 2em;
     color: white;
 }
 
@@ -128,7 +128,7 @@ i:hover {
     }
     
     .intro {
-        padding: 5px 0;
+        padding: 15px 0;
         font-size: 1.6em;
     }
     
@@ -188,7 +188,7 @@ i:hover {
     }
     
     .intro {
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
     
     #infoContainer {

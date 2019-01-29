@@ -1,36 +1,36 @@
 // Define portfolio data without DB
 let data = [
   {
-    date: "28.01.2019.",
+    created: "29.01.2019.",
     project: "A Simple Camp Site.",
-    skills: "node.js, express,js, ejs, RESTful Routing, MongoDB, Bootstrap.",
+    skills: "node.js, express,js, ejs, passport.js, RESTful Routing, MongoDB, Bootstrap, Responsive Design, Authentification, Authorization.",
     visit: "https://frozen-shore-43033.herokuapp.com",
-    code: "..."
+    code: "https://github.com/ievatenav/campsite"
   },
   {
-    date: "10.01.2018.",
+    created: "10.01.2018.",
     project: "A Simple Blog App.",
-    skills: "node.js, express,js, ejs, RESTful Routing, MongoDB, SemanticUI.",
+    skills: "node.js, express,js, ejs, RESTful Routing, MongoDB, SemanticUI, Responsive Design.",
     visit: "https://shrouded-harbor-44813.herokuapp.com",
     code: "https://github.com/ievatenav/simple-blog"
   },
   {
-    date: "18.12.2018.",
+    created: "18.12.2018.",
     project: "A Simple To Do App.",
-    skills: "DOM manipulation, JQuery, Bootstrap.",
+    skills: "DOM manipulation, JQuery, Bootstrap, Responsive Design.",
     visit: "https://ievatenav.github.io/to-do-app/",
     code: "https://github.com/ievatenav/to-do-app"
   },
   {
-    date: "15.12.2018.",
-    project: "A Simple Color Guessing Game.",
+    created: "15.12.2018.",
+    project: "A Simple Color Guessing Game, Responsive Design.",
     skills: "Javascript functions, DOM manipulation.",
     visit: "https://ievatenav.github.io/color_game/",
     code: "https://github.com/ievatenav/color_game"
   },
   {
-    date: "10.12.2018.",
-    project: "A Simple Score Keeper.",
+    created: "10.12.2018.",
+    project: "A Simple Score Keeper, Responsive Design.",
     skills: "Basic javascript DOM manipulation.",
     visit: "https://ievatenav.github.io/score-keeper/",
     code: "https://github.com/ievatenav/score-keeper"
